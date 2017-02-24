@@ -15,7 +15,7 @@
 						%a.btn.btn-wire.btn-lg.half-margin-top.double-padding-left.double-padding-right{:href=>"#"}
 							BOOK NOW
 					.col-sm-3
-%section.section-trailor{:style=>"background-image:url(../images/section_bg_trailor.png);"}
+%section.section-how-it-works{:style=>"background-image:url(../images/how-it-works-bg.png);"}
 	.container
 		.row.double-margin-bottom
 			.col-lg-12
@@ -23,16 +23,32 @@
 					Info
 				%h2
 					How it works
+		.how-it-works-steps
+			- 4.times do
+				.how-it-works-step
+					.col-sm-6.how-it-works-step-inner
+						.row
+							.col-sm-8.text
+								%h3
+									INQUIRE
+								%p
+									The journey to the backcountry does not follow a fixed path. Though there are many ways to get there, most backcountry skiers and snowboarders have a familiar origin story. 
+							.col-sm-4.number
+								.tire.hidden-xs
+									%h1
+										1
+%section
+	.container
 		.row
-			.col-sm-6
-				.row
-					.col-sm-8
-						%h3
-							INQUIRE
-						%p
-							The journey to the backcountry does not follow a fixed path. Though there are many ways to get there, most backcountry skiers and snowboarders have a familiar origin story. 
-					.col-sm-4
-						.tire
-							%h1
-								1
+			.info-images-container
+				.col-sm-7.info-img-col-1.info-img-col
+					.info-img-card
+						%img.full-width{:src=>"../images/info-img-1.png"}
+				.col-sm-6.info-img-col-2.info-img-col
+					.info-img-card
+						%img.full-width{:src=>"../images/info-img-2.png"}
+				.col-sm-4.info-img-col-3.info-img-col
+					.info-img-card
+						%img.full-width{:src=>"../images/info-img-3.png"}
+
 =partial("shared/whats-next")

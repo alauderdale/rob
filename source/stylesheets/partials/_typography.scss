@@ -148,7 +148,7 @@ h2 {
   font-size: 7rem; 
   margin-bottom:1.5rem;
   color:$text-color;
-  line-height: 4.5rem;
+  line-height: 6.5rem;
   font-family: $headline-font-name;
   letter-spacing: 2px;
 }
@@ -204,6 +204,9 @@ p{
   }
   &.muted-accent{
     color:#495356!important;
+  }
+  &.muted-accent-white-bg{
+    color:#EBEEEE;
   }
 }
 

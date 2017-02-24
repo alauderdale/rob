@@ -1,0 +1,90 @@
+;;;
+"title": "Contact Us",
+"description": "Call, email, or request more information. We'd love to hear from you. "
+;;;
+
+%section
+	.container
+		.row
+			.col-lg-3.col-md-2
+			.col-lg-6.col-md-8
+				%h2
+					Questions? Let’s Chat
+				%p
+					Reach out to us by phone or email anytime. Or if you prefer, submit your information below and an EverCheck representative will be in touch with you within 24 hours of your request. 
+				%ul.list-inline
+					%li
+						%p.small
+							%small
+								%i.fa.fa-envelope
+							support@evercheck.com
+					%li
+						%p.small
+							%small
+								%i.fa.fa-phone
+							888-404-7996
+					%li
+						%p.small
+							%a{:href=>"/pricing#faqs"}
+								%small
+									%i.fa.fa-question
+								FAQ Page
+			.col-lg-3.col-md-2
+		.row.margin-top
+			.col-lg-3.col-md-2
+			.col-lg-6.col-md-8
+				%form
+					.row
+						.col-md-12
+							.form-group
+								%label
+									Your Name
+								%input.form-control.input-lg{:type=>"text"}
+						.col-md-6
+							.form-group
+								%label
+									Your Email
+								%input.form-control.input-lg{:type=>"text"}
+						.col-md-6
+							.form-group
+								%label
+									Company Telephone
+								%input.form-control.input-lg{:type=>"text"}
+						.col-md-6
+							.form-group
+								%label
+									Company Name
+								%input.form-control.input-lg{:type=>"text"}
+						.col-md-6
+							.form-group
+								%label
+									Your Role
+								%input.form-control.input-lg{:type=>"text"}
+						.col-md-12
+							.form-group
+								%label
+									How Can We Help?
+								%textarea.form-control.input-lg{:rows=>"5"}
+						.col-md-12.margin-top
+							%button.btn-primary.btn.pull-right.btn-lg{:type=>"submit"}
+								Send
+			.col-lg-3.col-md-2
+%section.padding-top
+	.container
+		.row
+			.col-sm-2
+			.col-sm-3
+				%img.img-responsive.margin-auto.margin-bottom{:src=>"../images/illustration_contact_one@2x.png", :width=>"127px"}
+			.col-sm-2
+				%p.text-center.margin-top
+					EverCheck 
+					%br
+					5210 Belfort Rd. 
+					%br
+					Jacksonville, FL 32256
+				%img.img-responsive.margin-auto.margin-top{:src=>"../images/water@2x.png", :width=>"148px"}
+			.col-sm-3
+				.hidden-xs
+					%img.img-responsive.margin-auto.margin-bottom{:src=>"../images/illustration_contact_two@2x.png", :width=>"105px"}
+			.col-sm-2
+=partial"shared/offer"

@@ -1,0 +1,11 @@
+.btn{
+	@include transition-duration(.2s);
+	font-family:$headline-font-name;
+	&.btn-wire{
+		border:1px solid rgba(255,255,255,.5);
+		color:white;
+		&:hover{
+			border-color: rgba(255,255,255,1);
+		}
+	}
+}

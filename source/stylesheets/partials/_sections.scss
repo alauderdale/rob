@@ -1,0 +1,36 @@
+.hero-header-lg{
+padding:206px 0;
+  @include breakpoint(sm) {
+    background:black!important;
+    padding:$baseline*3 0 ;
+    margin-top:50px;
+  }
+}
+
+//sections
+section{
+  padding:$baseline*2 0;
+
+  &.page-header-section{
+    background-size:cover;
+    background-position:center center;
+    padding:$baseline*4 0;
+    h1{
+      text-shadow:0 1px 13px rgba(0,0,0,.3);
+    }
+  }
+  &.inverse-section{
+  	@extend %white_text;
+    a{
+      color:white;
+      border-color:white;
+    }
+  }
+  &.bg-cover{
+    background:cenrer no-repeat 100%;
+    background-size:cover;
+    background-position:center center;
+  }
+}
+
+

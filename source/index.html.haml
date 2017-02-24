@@ -1,0 +1,78 @@
+%section.inverse-section.hero-header-lg.bg-cover{:style=>"background-image:url(../images/hero_home.png);"}
+	.container
+		.row
+			.col-lg-12.text-center
+				%h2.headline-accent.headline-accent-lg.no-pull
+					Robbie Pfunder
+				%h1
+					Mountain Bike 
+					%br
+					Stunt Show
+%section.section-trailor{:style=>"background-image:url(../images/section_bg_trailor.png);"}
+	.container
+		.row
+			.col-md-6.text-center.margin-bottom
+				%h2.headline-accent.headline-accent-lg
+					Entertainment
+				%h2
+					EXPERIENCE
+			.col-sm-6
+		.row.entertainment-stack-top
+			.col-md-7
+				.slider{:style=>"background-image:url(../images/home_slider_bg.png);"}
+			.col-md-5
+		.row.entertainment-stack-bottom
+			.col-md-7
+			.col-md-5
+				.div.card-texture-dark
+					%h3
+						PREMIER STUNT SHOWS
+					%p.margin-bottom
+						The journey to the backcountry does not follow a fixed path. Though there are many ways to get there, most backcountry skiers and snowboarders have a familiar origin story. 
+					.btn-stack
+						%a.btn.btn-block.btn-wire.btn-lg.half-margin-bottom{:href=>"#"}
+							BOOK NOW
+						%a.btn.btn-block.btn-wire.btn-lg{:href=>"#"}
+							Learn more
+		.row.hidden-xs
+			.col-md-1
+			.col-md-10
+				%img.full-width{:src=>"../images/quite_ranked_rider.png"}
+			.col-md-1
+
+%section.inverse-section.section-rider.bg-cover{:style=>"background-image:url(../images/section_bg_rider_home.png);"}
+	.container
+		.row
+			.col-md-3
+			.col-md-6.text-center
+				.rider-text
+					%h2.headline-accent.headline-accent-lg.no-pull
+						The Rider
+					%h1
+						ROBBIE
+					%p.double-margin-bottom
+						The journey to the backcountry does not follow a fixed path. Though there are many ways to get there, most backcountry skiers and snowboarders have a familiar origin story. 
+					.btn-stack
+						.row
+							.col-sm-2
+							.col-sm-8
+								%a.btn.btn-block.btn-wire.btn-lg.half-margin-bottom{:href=>"#"}
+									%i.fa.fa-play{:style=>"margin-right:5px;"}
+									See robbie in action
+								%a.btn.btn-block.btn-wire.btn-lg{:href=>"#"}
+									More about robbie
+							.col-sm-2
+			.col-md-3
+%section
+	.container
+		.row
+			.col-md-12.text-center.margin-bottom
+				%h2.headline-accent.headline-accent-lg
+					Media
+				%h2
+					Pics & Vids
+		.row
+			-9.times do
+				.col-sm-4
+					%img.full-width.margin-bottom{:src=>"../images/home_slider_bg.png"}
+=partial("shared/whats-next")

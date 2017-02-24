@@ -1,0 +1,57 @@
+%nav.navbar.navbar-default.navbar-fixed-top.global-nav
+	.container-fluid
+		.navbar-header
+			%a.navbar-brand{:href=>"/"}
+				%img{:src=>"../images/logo.png", :width=>"170px"}
+			.visible-xs
+				.pull-right
+					%button.tcon.tcon-menu--xcross.menu-button{"aria-label" => "toggle menu", :type => "button", "aria-expanded" => "false", "data-target" => "#collapse-menu", "data-toggle" => "collapse"}
+						%span.tcon-menu__lines{"aria-hidden" => "true"}
+						%span.tcon-visuallyhidden 
+							toggle menu
+		.hidden-xs
+			.desktop-nav
+				.navbar-left
+					%ul.nav.navbar-nav
+						%li.active
+							%a{:href=>"/"}
+								Home
+						%li
+							%a{:href=>"/info"}
+								Stunt Show Info
+						%li
+							%a{:href=>"/contact"}
+								Bio
+						%li
+							%a{:href=>"/contact"}
+								Media
+						%li
+							%a{:href=>"/contact"}
+								Contact
+
+
+			%form.navbar-form.navbar-right
+				%a.btn.btn-primary{:href=>"/demo"}
+					Book a show
+	.visible-xs
+		#collapse-menu.collapse.navbar-collapse.mobile-nav
+			%ul.nav.navbar-nav
+				%li
+					%a{:href=>"/pricing"}
+						Home
+				%li
+					%a{:href=>"/contact"}
+						Stunt Show Info
+				%li
+					%a{:href=>"/contact"}
+						Bio
+				%li
+					%a{:href=>"/contact"}
+						Media
+				%li
+					%a{:href=>"/contact"}
+						Contact
+				%li
+					%a.bold-link{:href => "#"} 
+						Book a show
+

@@ -1,0 +1,70 @@
+
+
+//trailor section
+
+.section-trailor{
+	background-repeat:no-repeat;
+	background-position-x:right;
+}
+
+
+.entertainment-stack-bottom{
+	margin-top:-2px;
+
+}
+
+
+.card-texture-dark{
+	@extend %white_text;
+	background:shade($primary-color,50%) url(../images/card_texture_dark_bg.png) no-repeat center center;
+	backgorund-size:cover;
+	padding:$baseline*2;
+	min-height:470px;
+	position:relative;
+	display:block;
+	box-shadow: 0 42px 51px 0 rgba(112,126,131,0.41);
+	right:60px;
+	.btn-stack{
+		width:100%;
+		position:absolute;
+		bottom:0;
+		right:0;
+		left:0;
+		padding:$baseline*2;
+	}
+	margin-top:-414px;
+	margin-bottom:-414px;
+	@include breakpoint(md) {
+		min-height: auto;
+		margin-bottom:0;
+		margin-top:0;
+		min-height: auto;
+		right:0px;
+		.btn-stack{
+			position:relative;
+			padding:0;
+		}
+  	}
+}
+
+
+.slider{
+	height:350px;
+	width:100%;
+	background:black;
+	position:relative;
+	left:10px;
+	background-size:cover;
+	@include breakpoint(md) {
+		left:0;
+	}
+}
+
+///rider section
+
+.section-rider{
+	min-height:713px;
+	.rider-text{
+		margin-top:80px;
+	}
+}

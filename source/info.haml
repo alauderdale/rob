@@ -6,13 +6,12 @@
 					About
 				%h1{:style=>"margin-top:-30px;"}
 					The stunt show
-				}
 				.row
 					.col-sm-3
 					.col-sm-6
 						%p.text-center
 							The journey to the backcountry does not follow a fixed path. Though there are many ways to get there, most backcountry skiers and snowboarders have a familiar origin story.
-						%a.btn.btn-wire.btn-lg.half-margin-top.double-padding-left.double-padding-right{:href=>"#"}
+						%a.btn.btn-wire.btn-lg.half-margin-top.double-padding-left.double-padding-right{:href=>"/contact"}
 							BOOK NOW
 					.col-sm-3
 %section.section-how-it-works{:style=>"background-image:url(../images/how-it-works-bg.png);"}
@@ -50,5 +49,5 @@
 				.col-sm-4.info-img-col-3.info-img-col
 					.info-img-card
 						%img.full-width{:src=>"../images/info-img-3.png"}
-
-=partial("shared/whats-next")
+%div{:style=>"margin-top:-80px;"}
+	=partial("shared/whats-next")

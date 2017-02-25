@@ -1,0 +1,19 @@
+.contact-section{
+	padding-top:$baseline*5;
+	background:$footer-color;
+	@include breakpoint(sm) {
+		padding-bottom:$baseline*7;
+	}
+	h2{
+		color:white;
+	}
+	.panel-body{
+		padding:$baseline*1.5;
+	}
+	.btn-primary{
+		background:$footer-color;
+		&:hover{
+			background:tint($footer-color,10%);
+		}
+	}
+}

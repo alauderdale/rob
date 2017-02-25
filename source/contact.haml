@@ -1,0 +1,57 @@
+%section.contact-section.hero-header-lg{:style=>"background-image:url(../images/contact_bg.png);"}
+	.container
+		.row
+			.col-lg-3.col-md-2
+			.col-lg-6.col-md-8
+				%h2.text-center
+					Get in touch
+			.col-lg-3.col-md-2
+		.row.margin-top
+			.col-lg-3.col-md-2
+			.col-lg-6.col-md-8
+				.panel
+					.panel-body
+						%p.text-center.margin-bottom
+							Fill this out so we can learn more about you and your needs.
+						%form
+							.row
+								.col-md-12
+									.form-group
+										%label
+											My name is
+										%input.form-control.input-lg{:type=>"text"}
+								.col-md-6
+									.form-group
+										%label
+											Email
+										%input.form-control.input-lg{:type=>"text"}
+								.col-md-6
+									.form-group
+										%label
+											Phone
+										%input.form-control.input-lg{:type=>"text"}
+								.col-md-12
+									.form-group
+										%label
+											I want to...
+										%select.form-control.input-lg{:rows=>"5"}
+											%option
+												Book a show
+											%option
+												Buy Robbie a beer
+								.col-md-12
+									.form-group
+										%label
+											Anything else?
+										%textarea.form-control.input-lg{:rows=>"5"}
+								.col-md-12.margin-top
+									%button.btn-primary.btn.btn-block.btn-lg{:type=>"submit"}
+										Send
+			.col-lg-3.col-md-2
+
+
+:css
+	footer{
+		background:transparent!important;
+		margin-top:-176px;
+	}

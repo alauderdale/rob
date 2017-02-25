@@ -1,0 +1,19 @@
+%section.media-grid
+	.container
+		.grid
+			.grid-sizer
+			- 4.times do
+				.grid-item
+					%a.fancybox{:href=>"images/header_media.png"}
+						%img.full-width{:src=>"http://lorempixel.com/400/500/sports/"}
+						.img-title
+							%h2
+								IMAGE TITLE
+				.grid-item
+					%a.fancybox{:href=>"images/header_media.png"}
+						%img.full-width{:src=>"http://lorempixel.com/400/600/sports/"}
+						.img-title
+							%h2
+								IMAGE TITLE
+
+

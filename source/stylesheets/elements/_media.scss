@@ -1,0 +1,46 @@
+.hero-media{
+	padding:$baseline*6 0;
+	@include breakpoint(sm) {
+		padding-top:$baseline*2;
+
+	}
+}
+
+
+
+/* fluid 5 columns */
+.grid-sizer,
+.grid-item { 
+	width: 31%; 
+	margin:1%;
+	box-shadow: 0 42px 51px 0 rgba(112,126,131,0.41);
+	background:black;
+	@include breakpoint(sm) {
+		width: 48%; 
+	}
+	img{
+		@include transition-duration(.2s);
+	}
+	&:hover{
+		img{
+			margin-top:-2px;
+		}
+	}
+}
+
+
+.img-title{
+	width: 100%;
+	background:rgba(0,0,0,.8);
+	padding:20px;
+	position:relative;
+	bottom:55px;
+	margin-bottom:-55px;
+	height:55px;
+	h2{
+		color: white;
+		margin:0;
+		font-size: .8em;
+		line-height: 1em;
+	}
+}

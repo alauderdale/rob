@@ -1,0 +1,140 @@
+section.bio-info-graphics{
+	background:url(../images/info_chains.png) no-repeat center 130px;
+
+  @include breakpoint(lg) {
+    background:url(../images/info_chains_md.png) no-repeat center 130px;
+  }
+
+  @include breakpoint(md) {
+  	background:none;
+  }
+
+
+}
+
+.bio-info-graphic{
+	margin-bottom: $baseline;
+	.bio-info{
+		min-height: 179px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		h1{
+			color: white;
+			font-size: 3em;
+			vertical-align: middle;
+			position: relative;
+			top:60px;
+		}
+	}
+	h5{
+		font-family: $headline-font-name!important;
+		font-size: 1.5em;
+		line-height: 1.2em;
+	}
+}
+
+
+
+.bio-stack-bottom{
+	margin-top:-2px;
+
+}
+
+
+.card-texture-dark-bio{
+	@extend %white_text;
+	background:shade($primary-color,50%) url(../images/card_texture_dark_bg.png) no-repeat center center;
+	backgorund-size:cover;
+	padding:$baseline*2;
+	min-height:410px;
+	position:relative;
+	display:block;
+	box-shadow: 0 42px 51px 0 rgba(112,126,131,0.41);
+	right:60px;
+	.btn-stack{
+		width:100%;
+		position:absolute;
+		bottom:0;
+		right:0;
+		left:0;
+		padding:$baseline*2;
+	}
+	margin-top:-264px;
+	margin-bottom:-264px;
+	@include breakpoint(md) {
+		min-height: auto;
+		margin-bottom:0;
+		margin-top:0;
+		min-height: auto;
+		right:0px;
+		.btn-stack{
+			position:relative;
+			padding:0;
+		}
+  	}
+}
+
+
+.slider-bio{
+	box-shadow: 0 42px 51px 0 rgba(112,126,131,0.41);
+	height:385px;
+	width:100%;
+	background:transparent;
+	position:relative;
+	left:-5px;
+	background-size:100%;
+	background-repeat:no-repeat;
+	border:4px solid white;
+	outline: 1px solid $primary-color;
+	z-index: 300;
+	&:hover{
+		h1{
+			bottom:2px;
+		}
+		i{
+			color:white!important;
+		}
+	}
+	.play-icon{
+			@include breakpoint(md) {
+				i{
+					position:absolute;
+					top:35%!important;
+					left:45%!important;
+				}
+			}
+		i{
+			@include transition-duration(.2s);
+			font-size: 6em;
+			color: rgba(255,255,255,.8);
+			position:absolute;
+			left:45%;
+			top:30%;
+		}
+	}
+	h1{
+		@include transition-duration(.2s);
+		position:absolute;
+		bottom:0;
+		left:20px;
+		color:rgba(255,255,255,.4);
+		text-decoration: none;
+		font-size: 3em;
+
+	}
+	@include breakpoint(lg) {
+		height: 320px;
+	}
+	@include breakpoint(md) {
+		left:0;
+		height: 420px;
+	}
+	@include breakpoint(sm) {
+		overflow: visible;
+		left:0;
+		height: 200px;
+		border:none;
+		outline: none;
+		background-position:center bottom;
+	}
+}

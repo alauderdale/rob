@@ -19,20 +19,20 @@
 			.col-sm-6
 		.row.entertainment-stack-top
 			.col-md-7
-				.slider{:style=>"background-image:url(../images/home_slider_bg.png);"}
+				.slider-entertainment{:style=>"background-image:url(../images/home_slider_bg.png);"}
 			.col-md-5
 		.row.entertainment-stack-bottom
 			.col-md-7
 			.col-md-5
-				.div.card-texture-dark
+				.div.card-texture-dark-entertainment
 					%h3
 						PREMIER STUNT SHOWS
 					%p.margin-bottom
 						The journey to the backcountry does not follow a fixed path. Though there are many ways to get there, most backcountry skiers and snowboarders have a familiar origin story. 
 					.btn-stack
-						%a.btn.btn-block.btn-wire.btn-lg.half-margin-bottom{:href=>"#"}
+						%a.btn.btn-block.btn-wire.btn-lg.half-margin-bottom{:href=>"/contact"}
 							BOOK NOW
-						%a.btn.btn-block.btn-wire.btn-lg{:href=>"#"}
+						%a.btn.btn-block.btn-wire.btn-lg{:href=>"/info"}
 							Learn more
 		.row.hidden-xs
 			.col-md-1
@@ -56,10 +56,10 @@
 						.row
 							.col-sm-2
 							.col-sm-8
-								%a.btn.btn-block.btn-wire.btn-lg.half-margin-bottom{:href=>"#"}
+								%a.btn.btn-block.btn-wire.btn-lg.half-margin-bottom.fb-video{:href=>"https://vimeo.com/78700721"}
 									%i.fa.fa-play{:style=>"margin-right:5px;"}
 									See robbie in action
-								%a.btn.btn-block.btn-wire.btn-lg{:href=>"#"}
+								%a.btn.btn-block.btn-wire.btn-lg{:href=>"/about"}
 									More about robbie
 							.col-sm-2
 			.col-md-3
@@ -72,7 +72,6 @@
 				%h2
 					Pics & Vids
 		.row
-			-9.times do
-				.col-sm-4
-					%img.full-width.margin-bottom{:src=>"../images/home_slider_bg.png"}
-=partial("shared/whats-next")
+			=partial("shared/media-grid")
+%div{:style=>"margin-top:-60px;"}
+	=partial("shared/whats-next")

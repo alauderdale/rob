@@ -14,7 +14,7 @@
 }
 
 
-.card-texture-dark{
+.card-texture-dark-entertainment{
 	@extend %white_text;
 	background:shade($primary-color,50%) url(../images/card_texture_dark_bg.png) no-repeat center center;
 	backgorund-size:cover;
@@ -48,7 +48,7 @@
 }
 
 
-.slider{
+.slider-entertainment{
 	height:350px;
 	width:100%;
 	background:black;

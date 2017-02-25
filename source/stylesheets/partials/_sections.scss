@@ -1,7 +1,7 @@
 .hero-header-lg{
 padding:206px 0;
   @include breakpoint(sm) {
-    background:black!important;
+    // background:black!important;
     padding:$baseline*3 0 ;
     margin-top:50px;
   }

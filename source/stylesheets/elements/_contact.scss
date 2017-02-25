@@ -3,6 +3,7 @@
 	background:$footer-color;
 	@include breakpoint(sm) {
 		padding-bottom:$baseline*7;
+		padding-top:$baseline;
 	}
 	h2{
 		color:white;

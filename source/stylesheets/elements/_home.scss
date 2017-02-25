@@ -45,6 +45,9 @@
 			padding:0;
 		}
   	}
+  	@include breakpoint(sm) {
+  		padding:$baseline;
+  	}
 }
 
 

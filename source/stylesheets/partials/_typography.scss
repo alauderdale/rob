@@ -214,6 +214,10 @@ p{
 
   @include breakpoint(sm) {
 
+  .text-center-sm{
+    text-align:center!important;
+  }
+
   .headline-accent{
     &.headline-accent-lg{
       font-size: 60px;
@@ -225,6 +229,9 @@ p{
     }
     h2{
       font-size: 4em;
+    }
+    h3{
+      font-size: 2em;
     }
   }
 

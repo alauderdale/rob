@@ -72,6 +72,9 @@ section.bio-info-graphics{
 			padding:0;
 		}
   	}
+  	@include breakpoint(sm) {
+  		padding:$baseline;
+  	}
 }
 
 
